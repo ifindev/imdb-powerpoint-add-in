@@ -26,6 +26,10 @@ export default function App() {
     setLoading(false);
   };
 
+  const handleResetMovies = () => {
+    setMovies([]);
+  };
+
   return (
     <div className={classes.root}>
       <Header />
