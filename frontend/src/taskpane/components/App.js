@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import Header from "./Header";
 import useStyles from "./styles";
 import Loading from "./Loading";
+import MoviesCard from "./MoviesCard";
 
 export default function App({ isOfficeInitialized }) {
   const classes = useStyles();
@@ -39,6 +40,7 @@ export default function App({ isOfficeInitialized }) {
       <Header fetchMovies={handleFetchMovies} resetMovies={handleResetMovies} />
       <section className={classes.container}>
         <Loading loading={loading} />
+        <MoviesCard movies={movies} />
       </section>
     </div>
   );
