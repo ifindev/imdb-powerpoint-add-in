@@ -4,10 +4,10 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 import Header from "./Header";
 import useStyles from "./styles";
+import Loading from "./Loading";
 
 export default function App({ isOfficeInitialized }) {
   const classes = useStyles();
@@ -37,6 +37,9 @@ export default function App({ isOfficeInitialized }) {
   return (
     <div className={classes.root}>
       <Header fetchMovies={handleFetchMovies} resetMovies={handleResetMovies} />
+      <section className={classes.container}>
+        <Loading loading={loading} />
+      </section>
     </div>
   );
 }
