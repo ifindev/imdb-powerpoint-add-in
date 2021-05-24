@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      <Header />
+      <Header fetchMovies={handleFetchMovies} resetMovies={handleResetMovies} />
     </div>
   );
 }
