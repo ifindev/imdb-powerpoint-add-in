@@ -2,9 +2,6 @@ const rp = require('request-promise')
 const cheerio = require('cheerio')
 import parseDataFromUrls from './parseDataFromUrls'
 
-const imdb =
-  'https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc'
-
 const imdbScrape = async (url) => {
   try {
     const html = await rp(url)
