@@ -1,4 +1,4 @@
-# Front for IMDB Top Powerpoint Add-In
+# Frontend for IMDB Top Movies Scraper Powerpoint Add-In
 
 ## Description
 
@@ -9,7 +9,8 @@ In this repository, you can find the frontend code for Powerpoint Add-in that fe
 Step by step to run this project successfully.
 
 - First, make sure that you're opening this project on Windows machine. Also make sure that you have Microsoft Powerpoint installed.
-- Start the backed for web scraping in `backend/` directory.
+- Run `npm install` to install all the required dependencies.
+- Start the backend for web scraping in the `backend/` directory.
 - Then to get the project start locally, type `npm start` and run it on cmd.
 
 ## Copyright
