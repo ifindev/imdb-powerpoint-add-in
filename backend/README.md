@@ -1,4 +1,4 @@
-# Frontend for IMDB Top Movies Scraper Powerpoint Add-In
+# Backend for IMDB Top Movies Scraper Powerpoint Add-In
 
 ## Description
 
