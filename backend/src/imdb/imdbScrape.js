@@ -1,6 +1,6 @@
 const rp = require('request-promise')
 const cheerio = require('cheerio')
-import parseDataFromUrls from './parseDataFromUrls'
+const parseDataFromUrls = require('./parseDataFromUrls')
 
 const imdbScrape = async (url) => {
   try {

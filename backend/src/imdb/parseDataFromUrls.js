@@ -1,4 +1,4 @@
-import getMovieData from './getMovieData'
+const getMovieData = require('./getMovieData')
 
 const parseDataFromUrls = (urls) => {
   return Promise.all(
@@ -7,3 +7,5 @@ const parseDataFromUrls = (urls) => {
     })
   )
 }
+
+module.exports = parseDataFromUrls

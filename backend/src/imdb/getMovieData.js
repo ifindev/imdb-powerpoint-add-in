@@ -20,4 +20,4 @@ const getMovieData = async (url) => {
   }
 }
 
-export default getMovieData
+module.exports = getMovieData

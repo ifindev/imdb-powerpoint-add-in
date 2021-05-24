@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const imdbScrape = require('./imdbScrape')
+const imdbScrape = require('./imdb/imdbScrape')
 
 const app = express()
 app.use(cors())
