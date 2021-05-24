@@ -9,7 +9,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import Header from "./Header";
 import useStyles from "./styles";
 
-export default function App() {
+export default function App({ isOfficeInitialized }) {
   const classes = useStyles();
 
   const [movies, setMovies] = useState([]);
@@ -29,6 +29,10 @@ export default function App() {
   const handleResetMovies = () => {
     setMovies([]);
   };
+
+  if (!isOfficeInitialized) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className={classes.root}>
